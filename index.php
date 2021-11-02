@@ -5,6 +5,8 @@ require __DIR__ . "./classes/movieClass.php";
 $f_avatar = new Movie("Avatar", "James Cameron", 2009, 162, "inglese", 9.99);
 $f_avengers_endgame = new Movie ("Avengers: Endgame", "Anthony e Joe Russo", 2019, 181, "inglese", 13.99);
 
+$f_titanic = new Movie ("Titanic", "James Cameron", 1997, 195, "inglese", 8.25);
+
 // var_dump($f_avatar->getInfo()); die;
 
 ?>
@@ -37,6 +39,13 @@ $f_avengers_endgame = new Movie ("Avengers: Endgame", "Anthony e Joe Russo", 201
             <p>durata: <?= $f_avengers_endgame->getInfo("durata") ?></p>
             <p>lingua: <?= $f_avengers_endgame->getInfo("lingua") ?></p>
             <p>prezzo: <?= $f_avengers_endgame->getPrezzo(18) ?></p>
+        </li>
+        <li>
+            <h2><?= $f_titanic->getInfo("titolo") ?></h2>
+            <p><?= $f_titanic->getInfo("anno") ?></p>
+            <p>durata: <?= $f_titanic->getInfo("durata") ?></p>
+            <p>lingua: <?= $f_titanic->getInfo("lingua") ?></p>
+            <p>prezzo: <?= $f_titanic->getPrezzo(18) ?></p>
         </li>
     </ul>
 </body>
