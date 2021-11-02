@@ -26,7 +26,7 @@ class Movie{
         if($userEta < 20){
             $prezzoFinale = $this->prezzo - ($this->prezzo * 0.50);
             return number_format($prezzoFinale, 2, '.', ',');
-        } else if ($userEta < 60){
+        } else if ($userEta > 60){
             $prezzoFinale = $this->prezzo - ($this->prezzo * 0.25);
             return number_format($prezzoFinale, 2, '.', ',');
         } else {
