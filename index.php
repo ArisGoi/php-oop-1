@@ -1,5 +1,5 @@
 <?php
-require __DIR__ . "./classes/movieClass.php";
+require __DIR__ . "/classes/movieClass.php";
 
 // vengono istanziati almeno due oggetti ‘Movie’ e stampati a schermo i valori delle relative proprietà
 $f_avatar = new Movie("Avatar", "James Cameron", 2009, 162, "inglese", 9.99);
